@@ -4,7 +4,6 @@ name: Check Runbooks Consistency
 # must trip this check even when nobody touched strategy/runbooks.json, since a
 # dangling roster slug breaks the app's one-click team deploy.
 on:
-  pull_request:
   push:
     branches: [main]
 
