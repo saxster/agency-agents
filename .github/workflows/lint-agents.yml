@@ -1,26 +1,8 @@
 name: Lint Agent Files
 
 on:
-  pull_request:
-    paths:
-      - "academic/**"
-      - "design/**"
-      - "engineering/**"
-      - "finance/**"
-      - "game-development/**"
-      - "gis/**"
-      - "healthcare/**"
-      - "marketing/**"
-      - "paid-media/**"
-      - "sales/**"
-      - "security/**"
-      - "product/**"
-      - "project-management/**"
-      - "testing/**"
-      - "support/**"
-      - "spatial-computing/**"
-      - "specialized/**"
-
+  push:
+    branches: [main]
 jobs:
   lint:
     name: Validate agent frontmatter and structure
